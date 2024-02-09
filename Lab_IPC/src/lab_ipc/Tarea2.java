@@ -4,7 +4,7 @@ package lab_ipc;
 import java.util.Scanner;
 
 
-public class Tarea1_Rodolfo {
+public class Tarea2 {
     
     public static void ejercicio(){
         
@@ -17,9 +17,8 @@ public class Tarea1_Rodolfo {
             System.out.println("1. Suma");
             System.out.println("2. Resta");
             System.out.println("3. Multiplicacion");
-            System.out.println("4.Division");
-            System.out.println("5. Tablas de multiplicar");
-            System.out.println("6.Salir");
+            System.out.println("4. Division");
+            System.out.println("5. Salir");
             System.out.print("\nEscoga uno: ");
             int validador = sc.nextInt();
             float resultado=0;
@@ -80,36 +79,8 @@ public class Tarea1_Rodolfo {
                     System.out.println("\nEl cociente es: "+resultadocociente);
                     System.out.println("El residuo es: "+resultado+"\n");
                     
-                    break;
+                    break;  
                 case 5:
-                    
-                    float indice;
-                    System.out.print("Ingrese el numero de la tabla de multiplicar: ");
-                    indice = sc.nextFloat();
-                    System.out.print("Ingrese numero de inicio: ");
-                    num1 = sc.nextFloat();
-                    System.out.print("Ingrese numero de fin: ");
-                    num2 = sc.nextFloat();
-                    
-                    if (num2 <= num1) {
-                        System.out.println("No sea trollo y no ponga '0'");
-                        System.out.print("Ingrese el valor de inicio: ");
-                        num1=sc.nextFloat();
-                        System.out.print("Ingrese el valor de fin: ");
-                        num2=sc.nextFloat();
-                    }
-                    
-                    System.out.println("");
-                    while (num1 <= num2) {                        
-                        resultado = num1*indice;
-                        
-                        System.out.println(indice +" x "+num1+ " = "+resultado);
-                        num1++;
-                        
-                    }
-                    System.out.println("");
-                    break;
-                case 6:
                     repetir = false;
                     System.out.println("Gracias por haberme quitado el tiempo, triple sentuajesimo cuarto jo de la gran ****");
                     break;
